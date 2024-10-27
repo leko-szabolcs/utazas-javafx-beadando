@@ -24,7 +24,7 @@
          <top>
             <HBox prefHeight="60.0" prefWidth="421.0" style="-fx-background-color: #373737;" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="60.0" prefWidth="922.0" text="JAVA FX Beadandó" textFill="WHITE">
+                  <Label fx:id="TestLabel" prefHeight="60.0" prefWidth="922.0" text="JAVA FX Beadandó" textFill="WHITE">
                      <padding>
                         <Insets left="20.0" />
                      </padding>

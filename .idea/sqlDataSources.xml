@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="ac02f7fc-66b9-4829-8570-38f4d85001eb" name="feladat.db Mapping">
+      <data-sources db="bf62d169-3cdb-48d9-96fb-967dff3f2b9e" ddl="f1b96929-f5d6-40aa-a8e7-90fb12f8c8eb" />
+    </mapping>
+  </component>
+</project>
