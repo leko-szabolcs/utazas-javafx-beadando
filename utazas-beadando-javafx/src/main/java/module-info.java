@@ -6,7 +6,6 @@ module com.example.utazasbeadandojavafx {
     requires java.sql;
     requires org.hibernate.orm.core;
     requires java.desktop;
-    requires static lombok;
     opens com.example.utazasbeadandojavafx to javafx.fxml;
     exports com.example.utazasbeadandojavafx;
 }
