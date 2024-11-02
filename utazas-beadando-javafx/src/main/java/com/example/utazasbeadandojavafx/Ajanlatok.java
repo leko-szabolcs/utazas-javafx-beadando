@@ -13,8 +13,9 @@ public class Ajanlatok {
     public String Indulas;
     public int Idotartam;
     public int Ar;
+    public int Sorszam;
 
-    public Ajanlatok(String orszag, String nev, int besorolas, boolean ellatas, String indulas, int idotartam, int ar) {
+    public Ajanlatok(int sorszam, String orszag, String nev, int besorolas, boolean ellatas, String indulas, int idotartam, int ar) {
         Orszag = orszag;
         Nev = nev;
         Besorolas = besorolas;
@@ -26,6 +27,7 @@ public class Ajanlatok {
         Indulas = indulas;
         Idotartam = idotartam;
         Ar = ar;
+        Sorszam = sorszam;
     }
 
     public String getOrszag() {
@@ -87,5 +89,13 @@ public class Ajanlatok {
 
     public void setAr(int ar) {
         Ar = ar;
+    }
+
+    public int getSorszam() {
+        return Sorszam;
+    }
+
+    public void setSorszam(int sorszam) {
+        Sorszam = sorszam;
     }
 }

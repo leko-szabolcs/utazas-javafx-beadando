@@ -4,11 +4,9 @@
         "http://www.hibernate.org/dtd/hibernate-configuration">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.url">jdbc:sqlite:/c:/adatbazis/adatok.db</property>
-        <property name="dialect">org.sqlite.hibernate.dialect.SQLiteDialect</property>
-        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
-        <!--mapping class="com.example.utazasbeadandojavafx.Szalloda"/>
+        <property name="connection.url">jdbc:sqlite:/c:/adatbazis/adatok.db</property>
         <mapping class="com.example.utazasbeadandojavafx.Helyseg"/>
-        <mapping class="com.example.utazasbeadandojavafx.Tavasz"/-->
+        <mapping class="com.example.utazasbeadandojavafx.Szalloda"/>
+        <mapping class="com.example.utazasbeadandojavafx.Tavasz"/>
     </session-factory>
 </hibernate-configuration>

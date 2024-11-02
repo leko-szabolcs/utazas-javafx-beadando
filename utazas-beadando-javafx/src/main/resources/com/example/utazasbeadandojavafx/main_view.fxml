@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.utazasbeadandojavafx.FeladatController">
+<AnchorPane prefHeight="610.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.utazasbeadandojavafx.FeladatController">
    <children>
       <BorderPane prefHeight="506.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -35,7 +35,7 @@
                </children></HBox>
          </top>
          <center>
-            <AnchorPane fx:id="ContetntView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <AnchorPane fx:id="ContetntView" prefHeight="200.0" prefWidth="690.0" BorderPane.alignment="CENTER" />
          </center>
       </BorderPane>
    </children>
