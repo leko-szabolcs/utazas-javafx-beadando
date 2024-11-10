@@ -171,7 +171,7 @@
                         </AnchorPane>
                      </content>
                   </Tab>
-                  <Tab onSelectionChanged="#ModositSelectorLoad" text="Modosít">
+                  <Tab onSelectionChanged="#ModositSelectorLoad" text="Módosít">
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
@@ -209,7 +209,7 @@
                                           <RadioButton fx:id="modositFelpanzioRadioButton" layoutX="278.0" layoutY="296.0" mnemonicParsing="false" text="Félpanzió" />
                                           <TextField fx:id="modositTengerpartTavTextField" layoutX="278.0" layoutY="205.0" promptText="Tengerpart Táv" />
                                           <TextField fx:id="modositRepterTavTextField" layoutX="277.0" layoutY="248.0" promptText="Reptér Táv" />
-                                          <Button fx:id="dbModositModositasButton" layoutX="317.0" layoutY="334.0" mnemonicParsing="false" onAction="#ModositMositas" text="Modosítás" />
+                                          <Button fx:id="dbModositModositasButton" layoutX="317.0" layoutY="334.0" mnemonicParsing="false" onAction="#ModositMositas" text="Módosítás" />
                                           <Slider fx:id="modositErtekelesSlider" layoutX="278.0" layoutY="123.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="150.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
                                           <Text layoutX="278.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Értékelés" wrappingWidth="150.13671875" />
                                           <Label fx:id="modositRespondLabel" alignment="CENTER" layoutX="-2.0" layoutY="365.0" prefHeight="40.0" prefWidth="707.0">

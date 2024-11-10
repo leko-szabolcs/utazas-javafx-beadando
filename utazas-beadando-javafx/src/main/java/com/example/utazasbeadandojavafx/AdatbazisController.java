@@ -124,42 +124,32 @@ public class AdatbazisController implements Initializable {
 
         //OLVAS1 menu Inicializalsa
         olvasSorszamTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("sorszam"));
-        olvasOrszagTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getSzalloda().getHelyseg().getOrszag()));
-        olvasNevTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getSzalloda().getNev()));
-        olvasBesorolasTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(String.valueOf("* ".repeat(Math.max(0, cellData.getValue().getSzalloda().getBesorolas())))));
+        olvasOrszagTc.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getSzalloda().getHelyseg().getOrszag()));
+        olvasNevTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getSzalloda().getNev()));
+        olvasBesorolasTc.setCellValueFactory(cellData ->new SimpleStringProperty(String.valueOf("* ".repeat(Math.max(0, cellData.getValue().getSzalloda().getBesorolas())))));
         olvasEllatasTc.setCellValueFactory(cellData -> {
             boolean felpanzio = cellData.getValue().getSzalloda().isFelpanzio();
             String displayValue = felpanzio ? "Félpanzió" : "Ellátás nélkül";
             return new SimpleStringProperty(displayValue);
         });
         olvasIndulasTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("indulas"));
-        olvasIdotartamTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
-        olvasArTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
+        olvasIdotartamTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
+        olvasArTc.setCellValueFactory(cellData ->new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
         Olvas1();
 
         //OLVAS2 Menu Incializalas
         olvas2SorszamTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("sorszam"));
-        olvas2OrszagTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getSzalloda().getHelyseg().getOrszag()));
-        olvas2NevTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getSzalloda().getNev()));
-        olvas2BesorolasTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(String.valueOf("* ".repeat(Math.max(0, cellData.getValue().getSzalloda().getBesorolas())))));
+        olvas2OrszagTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getSzalloda().getHelyseg().getOrszag()));
+        olvas2NevTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getSzalloda().getNev()));
+        olvas2BesorolasTc.setCellValueFactory(cellData ->new SimpleStringProperty(String.valueOf("* ".repeat(Math.max(0, cellData.getValue().getSzalloda().getBesorolas())))));
         olvas2EllatasTc.setCellValueFactory(cellData -> {
             boolean felpanzio = cellData.getValue().getSzalloda().isFelpanzio();
             String displayValue = felpanzio ? "Félpanzió" : "Ellátás nélkül";
             return new SimpleStringProperty(displayValue);
         });
         olvas2IndulasTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("indulas"));
-        olvas2IdotartamTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
-        olvas2ArTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
+        olvas2IdotartamTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
+        olvas2ArTc.setCellValueFactory(cellData -> new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
 
         olvas2Slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
@@ -184,12 +174,9 @@ public class AdatbazisController implements Initializable {
         modositAzTc.setCellValueFactory(new PropertyValueFactory<Szalloda,String>("Az"));
         modositNevTc.setCellValueFactory(new PropertyValueFactory<Szalloda,String>("Nev"));
         modositErtekelesTc.setCellValueFactory(new PropertyValueFactory<Szalloda,String>("Besorolas"));
-        modositHelysegTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getHelyseg().getNev()));
-        modositTengerpartTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getTengerpart_Tav() + " m"));
-        modositRepterTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getRepter_Tav() + " m"));
+        modositHelysegTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getHelyseg().getNev()));
+        modositTengerpartTc.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getTengerpart_Tav() + " m"));
+        modositRepterTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getRepter_Tav() + " m"));
         modositEllatasTc.setCellValueFactory(cellData -> {
             boolean felpanzio = cellData.getValue().isFelpanzio();
             String displayValue = felpanzio ? "Félpanzió" : "Ellátás nélkül";
@@ -225,12 +212,9 @@ public class AdatbazisController implements Initializable {
         //Torol menu inicializalas
         torolSorszamTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("Sorszam"));
         torolIndulasTc.setCellValueFactory(new PropertyValueFactory<Tavasz,String>("Indulas"));
-        torolIdotartamTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
-        torolSzallodaAzTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(cellData.getValue().getSzalloda().getAz()));
-        torolArTc.setCellValueFactory(cellData ->
-                new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
+        torolIdotartamTc.setCellValueFactory(cellData ->new SimpleStringProperty(cellData.getValue().getIdotartam()+" nap, "+(Integer.valueOf(cellData.getValue().getIdotartam())-1)+" éjszaka"));
+        torolSzallodaAzTc.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getSzalloda().getAz()));
+        torolArTc.setCellValueFactory(cellData -> new SimpleStringProperty(String.format("%,d",cellData.getValue().getAr()) + " HUF"));
 
         PopulateDbTorolComboBox();
         torolTavaszSorszamComboBox.valueProperty().addListener(new ChangeListener<Integer>() {

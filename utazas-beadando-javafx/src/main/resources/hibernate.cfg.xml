@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-configuration">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:sqlite:/c:/adatbazis/adatok.db</property>
+        <property name="connection.url">jdbc:sqlite:/c:/adatok/adatok.db</property>
         <mapping class="com.example.utazasbeadandojavafx.Helyseg"/>
         <mapping class="com.example.utazasbeadandojavafx.Szalloda"/>
         <mapping class="com.example.utazasbeadandojavafx.Tavasz"/>
