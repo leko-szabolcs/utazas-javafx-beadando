@@ -25,7 +25,7 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="startButton" layoutX="277.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Start"/>
+                  <Button fx:id="startButton" layoutX="277.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Start" onAction="#onStartButtonClick"/>
                   <Label layoutX="199.0" layoutY="198.0" text="Szál1:">
                      <font>
                         <Font size="16.0" />

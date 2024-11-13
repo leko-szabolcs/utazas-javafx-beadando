@@ -13,5 +13,11 @@ public class ParhuzamosController {
     @FXML private Label thread_one_txt;
     @FXML private Label thread_two_txt;
 
+    @FXML
+    private void onStartButtonClick() {
+        thread_one_txt.setText("Első szál");
+        thread_two_txt.setText("Második szál");
+    }
+
 
 }
