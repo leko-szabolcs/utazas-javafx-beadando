@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.utazasbeadandojavafx.ParhuzamosController">
    <children>
       <BorderPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -25,15 +25,15 @@
          <center>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="277.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Start" />
-                  <Label layoutX="186.0" layoutY="198.0" text="Thread1:">
+                  <Button fx:id="startButton" layoutX="277.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="147.0" text="Start"/>
+                  <Label layoutX="199.0" layoutY="198.0" text="Szál1:">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="497.0" layoutY="246.0" text="1111" />
-                  <Label layoutX="204.0" layoutY="246.0" text="1111" />
-                  <Label layoutX="479.0" layoutY="198.0" text="Thread1:">
+                  <Label fx:id="thread_one_txt" layoutX="497.0" layoutY="246.0" text="1111" />
+                  <Label fx:id="thread_two_txt" layoutX="204.0" layoutY="246.0" text="2222" />
+                  <Label layoutX="492.0" layoutY="198.0" text="Szál2:">
                      <font>
                         <Font size="16.0" />
                      </font>
