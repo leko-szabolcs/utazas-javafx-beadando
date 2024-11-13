@@ -31,8 +31,8 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="thread_one_txt" layoutX="497.0" layoutY="246.0" text="1111" />
-                  <Label fx:id="thread_two_txt" layoutX="204.0" layoutY="246.0" text="2222" />
+                  <Label fx:id="thread_two_txt" layoutX="497.0" layoutY="246.0" text="2222" />
+                  <Label fx:id="thread_one_txt" layoutX="204.0" layoutY="246.0" text="1111" />
                   <Label layoutX="492.0" layoutY="198.0" text="Szál2:">
                      <font>
                         <Font size="16.0" />
