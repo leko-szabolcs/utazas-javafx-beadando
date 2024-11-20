@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/utazas-beadando-javafx/utazas-beadando-javafx.iml" filepath="$PROJECT_DIR$/utazas-beadando-javafx/utazas-beadando-javafx.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/utazas-javafx-beadando.iml" filepath="$PROJECT_DIR$/.idea/utazas-javafx-beadando.iml" />
     </modules>
   </component>
