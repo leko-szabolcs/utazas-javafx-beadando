@@ -282,11 +282,12 @@ public class AdatbazisController implements Initializable {
         t.commit();
         session.close();
         olvas2Slider.setMax(MaxAr);
+        olvas2Slider.setValue(MaxAr);
         olvas2SliderLabel.setText("0 HUF - "+String.format("%,d", MaxAr)+ " HUF");
     }
 
     public void Olvas2(){
-        String HQLString = "From Tavasz where Ar < ";
+        String HQLString = "From Tavasz where Ar <= ";
         String MaxAr = String.valueOf(olvas2Slider.getValue());
         HQLString += MaxAr;
 

@@ -318,15 +318,6 @@ public class ForexController implements Initializable {
     public void listPostions(){
         try{
             List<Trade> trades = ctx.trade.listOpen(accountId).getTrades();
-
-            //Teszteléshez
-            System.out.println("list");
-            for(Trade trade: trades)
-                System.out.println(trade);
-            for(Trade trade: trades) {
-                System.out.println(trade.getId() + "\t" + trade.getInstrument() + "\t" + trade.getOpenTime() + "\t" + trade.getCurrentUnits() + "\t" + trade.getPrice() + "\t" + trade.getPrice());
-            }
-
             TradesTableView.setItems(FXCollections.observableArrayList(trades));
         }catch (Exception e){
             e.printStackTrace();
